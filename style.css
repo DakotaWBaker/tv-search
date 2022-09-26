@@ -1,0 +1,23 @@
+html, body {
+    background-color: #faa307;
+    font-family: 'Share Tech Mono', monospace;
+}
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+#searchForm {
+    display: flex;
+    justify-content: center;
+    flex-grow: 3;
+}
+input {
+    height: 50px;
+    width: 200px;
+    font-size: 1rem;
+    border: 1px solid #007bff;
+    color: #007bff;
+}
+button {
+    font-weight: bold;
+}

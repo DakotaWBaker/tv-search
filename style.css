@@ -1,6 +1,7 @@
 html, body {
     background-color: #faa307;
     font-family: 'Share Tech Mono', monospace;
+    transition: 1s background-color;
 }
 h1 {
     text-align: center;
@@ -22,4 +23,7 @@ input {
 button {
     font-weight: bold;
     margin: 1px;
+}
+#container {
+    max-height: 100%;
 }

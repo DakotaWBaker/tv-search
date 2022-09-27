@@ -3,6 +3,8 @@ const search = document.getElementById(searchForm);
 let imageList = document.getElementById("images");
 const btn = document.getElementById("reset");
 
+  
+
 //add event listener to searchForm listening for event. runs async function with parameter e
 searchForm.addEventListener("submit", async function (e) {
   e.preventDefault(); //prevents default search submit
@@ -19,10 +21,14 @@ const makeImages = (shows) => {
     console.log(result);
     const img = document.createElement("img"); //create new image element each loop
     img.src = result.show.image.medium; //sets image source to dot notation of object getting medium image
-    imageList.appendChild(img); //appends each img to imageList empty div
+    imageList.appendChild(img);
+    setTimeout(() => {
+      document.body.style.backgroundColor = 'gray';
+    }, 1000) //appends each img to imageList empty div
     btn.addEventListener("click", (e) => {   //event listener on reset button to remove all added children elements
       if (e.target.id === "reset") {
         imageList.removeChild(img);
+        document.body.style.backgroundColor = '#faa307';
       }
     });
   }

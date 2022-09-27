@@ -17,7 +17,9 @@ input {
     font-size: 1rem;
     border: 1px solid #007bff;
     color: #007bff;
+    margin: 1px;
 }
 button {
     font-weight: bold;
+    margin: 1px;
 }
